@@ -1,0 +1,7 @@
+---
+- hosts: uat-ui
+  gather_facts: False
+  remote_user: pmena
+  tasks:
+    - name: deesk
+      shell: df -h > qwert.txt

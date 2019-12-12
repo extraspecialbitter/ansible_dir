@@ -1,0 +1,10 @@
+---
+- hosts: uat-uframe
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: asadev
+  become_method: su
+  tasks:
+    - name: list current conda environments
+      shell: conda env list | grep engine2

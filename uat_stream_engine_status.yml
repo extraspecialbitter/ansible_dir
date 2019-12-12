@@ -1,0 +1,10 @@
+---
+- hosts: uat-stream_engine
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: asadev
+  become_method: su
+  tasks:
+    - name: run a script to check status
+      script: ./manage_stream_engine.sh status

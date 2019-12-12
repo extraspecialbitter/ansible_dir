@@ -1,0 +1,10 @@
+---
+- hosts: prod-ingest-handlers
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: asadev
+  become_method: su
+  tasks:
+    - name: run a script to start the ingest handlers
+      script: ./manage_ingest_handler.sh start

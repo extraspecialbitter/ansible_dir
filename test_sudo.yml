@@ -1,0 +1,9 @@
+---
+- hosts: sudo-test
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: ooiui
+  tasks:
+    - name: who
+      shell: whoami > qwert.txt

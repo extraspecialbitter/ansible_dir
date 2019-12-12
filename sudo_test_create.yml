@@ -1,0 +1,10 @@
+---
+- hosts: sudo-test
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: asadev
+  become_method: su
+  tasks:
+    - name: test
+      shell: echo "blah blah blah" > qwert.txt
