@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DATE=20191204
-export HASH=620db3ce80d09c683f076f6c401c8f051413e6b0
+export DATE=20200130
+export HASH=e730bd34b99359aeb7fcab6e09bba0756fa33470
 
 # Make archive copies of the three (3) stream_engine configuration files prior to the deployment.
 

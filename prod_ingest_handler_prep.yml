@@ -1,5 +1,5 @@
 ---
-- hosts: prod-stream_engine
+- hosts: prod-ingest_handlers
   gather_facts: False
   remote_user: pmena
   become: yes

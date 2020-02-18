@@ -10,7 +10,7 @@ fi
 arg=$1
 
 source ~/miniconda2/etc/profile.d/conda.sh
-conda activate engine2
-cd /home/asadev/miniconda2/envs/engine2/stream_engine
-/home/asadev/miniconda2/envs/engine2/bin/manage-streamng ${arg} 
+conda activate engine
+cd /home/asadev/miniconda2/envs/engine/stream_engine
+/home/asadev/miniconda2/envs/engine/bin/manage-streamng ${arg} 
 conda deactivate

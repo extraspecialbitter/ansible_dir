@@ -10,9 +10,10 @@ fi
 arg=$1
 
 source ~/miniconda2/etc/profile.d/conda.sh
-conda activate engine2
-cd /home/asadev/miniconda2/envs/engine2/ingest_engine/engine/ingestion_handler
-/home/asadev/miniconda2/envs/engine2/bin/manage-ingest-handler ${arg} telemetered
-/home/asadev/miniconda2/envs/engine2/bin/manage-ingest-handler ${arg} recovered
-/home/asadev/miniconda2/envs/engine2/bin/manage-ingest-handler ${arg} playback
+conda activate engine
+cd /home/asadev/miniconda2/envs/engine/ingest_engine/engine/ingestion_handler
+/home/asadev/miniconda2/envs/engine/bin/manage-ingestng ${arg}
+/home/asadev/miniconda2/envs/engine/bin/manage-ingest-handler ${arg} telemetered
+/home/asadev/miniconda2/envs/engine/bin/manage-ingest-handler ${arg} recovered
+/home/asadev/miniconda2/envs/engine/bin/manage-ingest-handler ${arg} playback
 conda deactivate

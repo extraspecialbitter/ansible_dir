@@ -1,5 +1,5 @@
 ---
-- hosts: uat-stream_engine
+- hosts: uat-ingest-handlers
   gather_facts: False
   remote_user: pmena
   become: yes

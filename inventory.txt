@@ -10,10 +10,7 @@
 
 # Ex 1: Ungrouped hosts, specify before any group headers.
 
-#green.example.com
-#blue.example.com
-#192.168.100.1
-#192.168.100.10
+localhost ansible_connection=local
 
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 
@@ -34,8 +31,11 @@ cie-tui-[01:04].intra.oceanobservatories.org
 [uat-cassandra]
 cie-tcn-[001:006].intra.oceanobservatories.org
 
-[uat-ingest-handlers]
+[uat-ingest_handlers]
 cie-tuf-03.intra.oceanobservatories.org 
+
+[uat-opendap]
+cie-tod-01.intra.oceanobservatories.org
 
 [sudo-test]
 ooiufs01.intra.oceanobservatories.org 
@@ -51,8 +51,11 @@ ooiufs[01:08].intra.oceanobservatories.org
 [prod-stream_engine]
 ooiufs[04:08].intra.oceanobservatories.org
 
-[prod-ingest-handlers]
+[prod-ingest_handlers]
 ooiufs03.intra.oceanobservatories.org 
+
+[prod-14543]
+ooiufs[03:08].intra.oceanobservatories.org
 
 [prod-ui]
 cie-ooiui[01:04].intra.oceanobservatories.org
@@ -60,8 +63,23 @@ cie-ooiui[01:04].intra.oceanobservatories.org
 [prod-cassandra]
 cie-pcn-[001:021].intra.oceanobservatories.org
 
+[prod-opendap]
+cie-opendap-01.intra.oceanobservatories.org
+
+[prod-erddap]
+cie-erddap-[01:04].intra.oceanobservatories.org
+
 [pre-prod-cassandra]
 cie-devcn[001:004].intra.oceanobservatories.org
 
+[pre-prod-opendap]
+cie-opendap-11.intra.oceanobservatories.org
+
 [esb]
 www.extraspecialbitter.com
+
+[ooi-redmine_server]
+cie-redmine.intra.oceanobservatories.org
+
+[whoi-redmine_server]
+ooi-redmine.whoi.net

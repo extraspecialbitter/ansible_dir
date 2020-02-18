@@ -1,0 +1,10 @@
+---
+- hosts: prod-14543
+  gather_facts: False
+  remote_user: pmena
+  become: yes
+  become_user: asadev
+  become_method: su
+  tasks:
+    - name: run a script to do prep work related to Redmine ticket 14543
+      script: ./14543_prep.sh 
