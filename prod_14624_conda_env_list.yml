@@ -1,5 +1,5 @@
 ---
-- hosts: prod-14543
+- hosts: prod-uframe
   gather_facts: False
   remote_user: pmena
   become: yes
@@ -7,7 +7,7 @@
   become_method: su
   tasks:
     - name: list current conda environments
-      shell: conda env list | grep -c engine
+      shell: conda env list 
       register: shell_result
 
     - debug:

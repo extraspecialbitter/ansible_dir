@@ -1,5 +1,5 @@
 ---
-- hosts: uat-ingest_handlers
+- hosts: prod-edex01
   gather_facts: False
   remote_user: pmena
   become: yes
@@ -7,4 +7,4 @@
   become_method: su
   tasks:
     - name: run a script to check status
-      script: ./ingest_handler_release_prep.sh 
+      script: ./edex01_release_prep.sh 

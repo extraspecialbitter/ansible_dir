@@ -6,5 +6,5 @@
   become_user: asadev
   become_method: su
   tasks:
-    - name: run a script to stop the ingest handlers
-      script: ./manage_ingest_handler.sh stop
+    - name: run a script to update the ingest engine conda code
+      script: ./ingest_handler_update.sh 

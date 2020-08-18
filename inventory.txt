@@ -34,6 +34,9 @@ cie-tcn-[001:006].intra.oceanobservatories.org
 [uat-ingest_handlers]
 cie-tuf-03.intra.oceanobservatories.org 
 
+[uat-edex01]
+cie-tuf-01.intra.oceanobservatories.org 
+
 [uat-opendap]
 cie-tod-01.intra.oceanobservatories.org
 
@@ -54,6 +57,9 @@ ooiufs[04:08].intra.oceanobservatories.org
 [prod-ingest_handlers]
 ooiufs03.intra.oceanobservatories.org 
 
+[prod-edex01]
+ooiufs01.intra.oceanobservatories.org 
+
 [prod-14543]
 ooiufs[03:08].intra.oceanobservatories.org
 
@@ -72,11 +78,14 @@ cie-erddap-[01:04].intra.oceanobservatories.org
 [pre-prod-cassandra]
 cie-devcn[001:004].intra.oceanobservatories.org
 
+[dev-uframe-test]
+uframe-[2:6]-test.intra.oceanobservatories.org
+
+[dev-uframe]
+uframe-[2:6].intra.oceanobservatories.org
+
 [pre-prod-opendap]
 cie-opendap-11.intra.oceanobservatories.org
-
-[esb]
-www.extraspecialbitter.com
 
 [ooi-redmine_server]
 cie-redmine.intra.oceanobservatories.org

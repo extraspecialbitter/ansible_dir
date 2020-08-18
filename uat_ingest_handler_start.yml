@@ -1,5 +1,5 @@
 ---
-- hosts: uat-ingest-handlers
+- hosts: uat-ingest_handlers
   gather_facts: False
   remote_user: pmena
   become: yes
